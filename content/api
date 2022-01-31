@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "question": " What do letters LBW stands for?",
+    "option": {
+      "opt1": "Left behind wicket",
+      "opt2": "Left before wicket",
+      "opt3": "Leg before wicket",
+      "opt4": "Leg behind wicket"
+    },
+    "ans":"Leg before wicket"
+  },
+  {
+    "id": 2,
+    "question": " Who did the last over for India in the 2007 T20 World Cup final?",
+    "option": {
+      "opt1": "Joginder Sharma",
+      "opt2": "R P Singh" ,
+      "opt3": "Irfan Pathan",
+      "opt4": "S Sreesanth"
+    },
+    "ans":"Joginder Sharma"
+  },
+  {
+    "id": 3,
+    "question": " Who is the batsman to score the most consecutive centuries in ODIs World Cup?",
+    "option": {
+      "opt1": "Sachin Tendulkar",
+      "opt2": "Rohit Sharma",
+      "opt3": "Ricky Ponting",
+      "opt4": "Kumar Sangakkara"
+    },
+    "ans":"Kumar Sangakkara"
+  },
+  {
+    "id": 4,
+    "question": " Who was the highest wicket taker in the 2019 World Cup?",
+    "option": {
+      "opt1": "Mitchell Starc",
+      "opt2": "Jofra Archer",
+      "opt3": "Jasprit Bumrah",
+      "opt4": "Pat Cummins"
+    },
+    "ans":"Mitchell Starc"
+  },
+  {
+    "id": 5,
+    "question": " How many centuries did Rohit Sharma score in the 2019 World Cup?",
+    "option": {
+      "opt1": "5",
+      "opt2": "3",
+      "opt3": "4",
+      "opt4": "6"
+    },
+    "ans":"5"
+  },
+  {
+    "id": 6,
+    "question": " On which ground was the 2016 T20 World Cup final played?",
+    "option": {
+      "opt1": "Wankhede stadium",
+      "opt2": "Eden Garden stadium",
+      "opt3": "Chinnaswamy stadium",
+      "opt4": "Feroz Shah Kotla stadium"
+    },
+    "ans":"Eden Garden stadium"
+  },
+  {
+    "id": 7,
+    "question": " How many sixes did Ben stokes last over by carlos Brathwaite in the 2016 T20 World Cup final?",
+    "option": {
+      "opt1": "2",
+      "opt2": "1",
+      "opt3": "4",
+      "opt4": "3"
+    },
+    "ans":"4"
+  },
+  {
+    "id": 8,
+    "question": " When was first ICC cricket World Cup started?",
+    "option": {
+      "opt1": "1983",
+      "opt2": "1975",
+      "opt3": "1968",
+      "opt4": "1972"
+    },
+    "ans":"1975"
+  },
+  {
+    "id": 9,
+    "question": " Which Indian cricketer had won the “Man of the Match” award in the final of the ICC World Cup 1983?",
+    "option": {
+      "opt1": "Mohinder Amarnath",
+      "opt2": "Sunil Gavaskar",
+      "opt3": "Kapil Dev",
+      "opt4": "Ravi Shastri"
+    },
+    "ans":"Mohinder Amarnath"
+  },
+  {
+    "id": 10,
+    "question": " Which cricket team has won most ICC ODI's Cricket World Cup titles?",
+    "option": {
+      "opt1": "England",
+      "opt2": "India",
+      "opt3": "West Indies",
+      "opt4": "Australia"
+    },
+    "ans":"Australia"
+  }
+ 
+]
+

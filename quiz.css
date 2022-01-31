@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html{
+    --green-color: rgb(87, 255, 205);
+    --text-color: rgb(252, 252, 252);
+}
+
+#back{
+    background-color: var(--green-color);
+}
+
+#login{
+   background-color: rgb(245, 116, 24);
+   color: rgb(252, 252, 252);
+   height: 530px;
+   width: 380px; 
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   text-align: center;
+   margin-top: 2rem;
+   box-shadow: 0 0 2.5rem 0.3rem rgb(51, 51, 51);
+}
+
+#title{
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.text{
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+#play-btn{
+    background: rgb(12, 255, 12);
+  
+}
+
+#capch{
+   font-weight: bold; 
+   color: red;
+}
+
+/* *************************************** *************************************  */
+
+#profileimg{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+}
+.mainbox{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+}
+
+#boldcontent{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: start;
+}
+#simplecontent{
+    font-size: 17px;
+    text-align: start;
+}
+
+.myid{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.question{
+    height:4rem; 
+    background-color: rgba(131, 236, 255, 0.555);
+    align-items:center;
+    border-radius: 8px;
+    border: 3px solid gold;
+}
+
+#opt1,#opt2,#opt3,#opt4{
+  width: 15rem;
+  height: 2.5rem;
+  background-color: rgba(131, 236, 255, 0.555);
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  border: 3px solid gold;
+  color:black;
+}
+#opti1,#opti2,#opti3,#opti4{
+    margin-bottom: 1rem;
+}
+
+
+#timer{
+    /* background-color: var(--green-color);
+    width: 260px; 
+    padding: 0.7rem;
+    text-align: center;
+    color: red;
+    border-radius: 8px;
+    border: 3px solid gold; */
+
+    /* background-color: var(--green-color); */
+    background-color: green;
+    height: 140px;
+    width: 140px; 
+    border-radius: 50%;
+    border: 5px solid gold;
+    color: red;
+    animation-name: timing;
+    
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@keyframes timing{
+    10%{
+        color: rgb(251, 255, 1);
+        background-color: rgb(2, 179, 2);
+    }
+    30%{
+        color: rgb(255, 238, 1);
+        background-color: rgb(1, 212, 1);
+    }
+    60%{
+        color: rgb(255, 238, 1);
+        background-color: rgb(173, 212, 0);
+    }
+    80%{
+        
+        background-color: rgb(196, 122, 3);
+    }
+    100%{
+        color: white;
+        background-color: red;
+       
+    }
+}
+
+#countdown{
+    /* color: red; */
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-top: 1.8rem;
+    padding-left: 2.2rem;
+}
+
+
+
+#nextbtn,#prebtn,#submitbtn{
+      font-size: 1rem;
+      padding: 0.3rem 2rem;
+      background-color: rgb(15, 106, 197);
+      border: 3px solid gold;
+      border-radius: 6px;
+      color: white;
+      float: right;
+      margin-right: 1rem;
+}
+
+#prebtn{
+    background-color: rgb(87, 152, 218);
+    border: 3px solid gold;
+}
+#nextbtn:hover{
+    background-color: rgb(197, 15, 15);
+}
+#submitbtn{
+    background-color: rgb(4, 184, 4);
+}
+#submitbtn:hover{
+    background-color: rgb(219, 5, 173);
+}
+
+
+#answ,#answ1,#answ2,#answ3,#answ4,#answ5,#answ6,#answ7,#answ8,#answ9{
+    color: rgb(37, 158, 1);
+    font-weight: bold;
+}
+#ques,#ques1,#ques2,#ques3,#ques4,#ques5,#ques6,#ques7,#ques8,#ques9{
+    font-weight: bold;
+    color: red;
+}
+
+#forming{
+    display: grid;
+    justify-content: center;
+    row-gap: 1rem;
+    grid-template-columns: 2fr;
+}
+
+@media screen and (max-width: 767px){
+    #currAns{
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+
+    #forming{
+      width: 90%;
+     
+    }
+    #profileimg{
+        height: 25%;
+        width: 25%;
+    }
+}
+@media screen and (max-width: 420px){ 
+    #login{
+        width: 90%;
+        height: 500px;
+    }
+    #profileimg{
+        height: 40%;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 586px){
+    .question{
+        height: 8rem;
+    }
+}
+ /* ************************************************************************************** */
