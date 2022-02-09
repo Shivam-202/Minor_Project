@@ -242,7 +242,7 @@ function ansfunction() {
   *********************************************************************  */
 
 function subfunction() {
-    document.getElementById('timer').style="display:none";
+    document.getElementById('timer').display=none;
     document.getElementById('submitbtn').disabled = true;
     document.getElementById('nextbtn').disabled = true;
     document.getElementById('nextbtn').style.backgroundColor = "rgb(87, 152, 218)";
