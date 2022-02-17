@@ -28,6 +28,7 @@ function captcha() {
     }
 
     document.getElementById('capch').value = finalCap;
+
 }
 
 
@@ -101,12 +102,26 @@ function infofunction() {
 }
 
 
+/*  ******************* Start Button Functionality ***************************
+  *********************************************************************  */
+function start(){
+    document.getElementById("startbtn").style="visibility:hidden;";
+    document.getElementsByClassName('question')[0].style="visibility:visible;";
+    document.getElementById("opt1").style="visibility:visible;";
+    document.getElementById("opt2").style="visibility:visible;";
+    document.getElementById("opt3").style="visibility:visible;";
+    document.getElementById("opt4").style="visibility:visible;";
+    document.getElementById("currAns").style="visibility:visible;";
+    document.getElementsByClassName('timevisibility')[0].style="visibility:visible;";
+    document.getElementById("btnmargin").style="visibility:visible;";
+}
+
+
 /*  ******************* Next Button Functionality ***************************
   *********************************************************************  */
 
 let i = -1;
 function nextfunction() {
-    
     countDownTime = 15000; 
 
     if (i < 10) {
@@ -125,6 +140,7 @@ function nextfunction() {
 
     }
     if (i == 10) {
+        subfunction();
         disable();
         document.getElementById('nextbtn').disabled = true;
         document.getElementById('nextbtn').style.backgroundColor = "rgb(87, 152, 218)";
@@ -141,10 +157,11 @@ function nextfunction() {
 
 var countDownTime = 15000;  // seconds in miliseconds
 
-var x = setInterval(function () {
+function time(){
+ setInterval(function () {
     countdownfun();
 }, 1000);
-
+}
 function countdownfun() {
     var seconds = countDownTime / 1000;
 
@@ -153,14 +170,23 @@ function countdownfun() {
     }
     else{
         document.getElementById("countdown").innerHTML = "0" + seconds;
+        if(seconds < 11 && seconds > 4){
+          document.getElementById("timer").style="background-color: rgb(250, 135, 0);";
+        }
+        else if(seconds < 4 && seconds >= 0){
+            document.getElementById("timer").style="background-color: rgb(250, 58, 0);";
+        }
     }
 
     if (countDownTime > 0) {
         enable();
         countDownTime = countDownTime - 1000;
-    } else {
+    }
+  
+     else {
         nextfunction();
         disable();
+        document.getElementById("timer").style="background-color: green;";
     }
 }
 
@@ -242,6 +268,7 @@ function ansfunction() {
   *********************************************************************  */
 
 function subfunction() {
+    hiddenBeforeSubmit();
     document.getElementById('submitbtn').disabled = true;
     document.getElementById('nextbtn').disabled = true;
     document.getElementById('nextbtn').style.backgroundColor = "rgb(87, 152, 218)";
@@ -369,4 +396,18 @@ function viewans() {
     });
 }
 
+
+function hiddenBeforeSubmit(){
+    document.getElementById("startbtn").style="visibility:hidden;";
+    document.getElementById("seeScoreCardbtn").style="visibility:visible;";
+    document.getElementById("seeScoreCardbtn").innerHTML="See Your Score Card";
+    document.getElementsByClassName('question')[0].style="visibility:hidden;";
+    document.getElementById("opt1").style="visibility:hidden;";
+    document.getElementById("opt2").style="visibility:hidden;";
+    document.getElementById("opt3").style="visibility:hidden;";
+    document.getElementById("opt4").style="visibility:hidden;";
+    document.getElementById("currAns").style="visibility:hidden;";
+    document.getElementsByClassName('timevisibility')[0].style="visibility:hidden;";
+    document.getElementById("btnmargin").style="visibility:hidden;";
+}
 // **************************************************************************************
