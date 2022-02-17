@@ -78,27 +78,32 @@ html{
 
 .question{
     height:4rem; 
-    background-color: rgba(131, 236, 255, 0.555);
     align-items:center;
+    background-color: rgba(131, 236, 255, 0.555);
     border-radius: 8px;
     border: 3px solid gold;
+    visibility:hidden;
 }
 
 #opt1,#opt2,#opt3,#opt4{
   width: 15rem;
   height: 2.5rem;
-  background-color: red;
+  background-color: rgba(131, 236, 255, 0.555);
   border-radius: 6px;
   text-align: center;
   padding-top: 5px;
   cursor: pointer;
   border: 3px solid gold;
   color:black;
+  visibility:hidden;
 }
 #opti1,#opti2,#opti3,#opti4{
     margin-bottom: 1rem;
 }
 
+#currAns{
+    visibility: hidden;
+}
 
 #timer{
       
@@ -123,7 +128,9 @@ html{
     padding-top: 1.8rem;
     padding-left: 2rem;
 }
-
+.timevisibility{
+    visibility: hidden;
+}
 
 
 #nextbtn,#prebtn,#submitbtn{
@@ -137,6 +144,21 @@ html{
       margin-right: 1rem;
 }
 
+#startbtn,#seeScoreCardbtn{
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    background-color: rgb(15, 197, 45);
+    border: 3px solid gold;
+    border-radius: 6px;
+    color: white;
+    position: relative;
+    top: -8rem;
+    left: 25rem;
+}
+#seeScoreCardbtn{
+    left: 12rem;
+    visibility: hidden;
+}
 #prebtn{
     background-color: rgb(87, 152, 218);
     border: 3px solid gold;
@@ -150,7 +172,9 @@ html{
 #submitbtn:hover{
     background-color: rgb(219, 5, 173);
 }
-
+#btnmargin{
+    visibility: hidden;
+}
 
 #answ,#answ1,#answ2,#answ3,#answ4,#answ5,#answ6,#answ7,#answ8,#answ9{
     color: rgb(37, 158, 1);
@@ -169,7 +193,7 @@ html{
 }
 
 @media screen and (max-width: 767px){
-    #currAns{
+    #ans{
         margin-top: -5rem;
         margin-bottom: 20px;
 
