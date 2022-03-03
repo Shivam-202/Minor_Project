@@ -230,7 +230,7 @@ var leave = 0, ansgiven = 0, correct = 0, wrong = 0;
 var ans1 = "";
 
 function ansfunction() {
- 
+ ansgiven++;
     var type = document.getElementsByName('same');
     if (type[0].checked) {
         ans1 = document.getElementById('opt1').innerText;
@@ -327,7 +327,7 @@ function scoreing() {
         return response.json();
     }).then(function (result) {
         if (ans1 == result[i - 1].ans) {
-            ansgiven++;
+           // ansgiven++;
             correct++;
             ans1 = "";
         }
