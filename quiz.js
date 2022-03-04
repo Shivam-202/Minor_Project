@@ -2,7 +2,7 @@
 /*  ******************* Captchar Functionality ***************************
   *********************************************************************  */
 
-var finalCap;
+var finalCap,k=0;
 
 function captcha() {
     let random_num = Math.random() * 10000;
@@ -122,6 +122,7 @@ function start(){
 
 let i = -1;
 function nextfunction() {
+ k=1;
     countDownTime = 15000; 
 
     if (i < 10) {
@@ -231,6 +232,7 @@ var ans1 = "";
 
 function ansfunction() {
 
+ if(k == 1){
     var type = document.getElementsByName('same');
     if (type[0].checked) {
       ansgiven++;
@@ -264,6 +266,7 @@ function ansfunction() {
         document.getElementById('opt2').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
         document.getElementById('opt3').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
     }
+}
  document.getElementById('ansgive').innerHTML = `${(ansgiven)} / 10`;
 
 }
