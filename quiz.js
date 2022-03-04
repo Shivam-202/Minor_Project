@@ -230,9 +230,10 @@ var leave = 0, ansgiven = 0, correct = 0, wrong = 0;
 var ans1 = "";
 
 function ansfunction() {
- ansgiven++;
+
     var type = document.getElementsByName('same');
     if (type[0].checked) {
+      ansgiven++;
         ans1 = document.getElementById('opt1').innerText;
         document.getElementById('opt1').style.backgroundColor = "yellow";
         document.getElementById('opt2').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
@@ -240,6 +241,7 @@ function ansfunction() {
         document.getElementById('opt4').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
      }
     else if (type[1].checked) {
+      ansgiven++;
         ans1 = document.getElementById('opt2').innerText;
         document.getElementById('opt2').style.backgroundColor = "yellow";
         document.getElementById('opt1').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
@@ -247,6 +249,7 @@ function ansfunction() {
         document.getElementById('opt4').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
     }
     else if (type[2].checked) {
+      ansgiven++;
         ans1 = document.getElementById('opt3').innerText;
         document.getElementById('opt3').style.backgroundColor = "yellow";
         document.getElementById('opt1').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
@@ -254,6 +257,7 @@ function ansfunction() {
         document.getElementById('opt4').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
     }
     else if (type[3].checked) {
+      ansgiven++;
         ans1 = document.getElementById('opt4').innerText;
         document.getElementById('opt4').style.backgroundColor = "yellow";
         document.getElementById('opt1').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
