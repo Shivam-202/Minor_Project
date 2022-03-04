@@ -148,7 +148,7 @@ function nextfunction() {
 
    
     clearAllRadios();
-    scoreing();
+//     scoreing();
     enable();
 }
 
