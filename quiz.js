@@ -272,6 +272,7 @@ function ansfunction() {
   *********************************************************************  */
 
 function subfunction() {
+   scoreing();
     hiddenBeforeSubmit();
     document.getElementById('submitbtn').disabled = true;
     document.getElementById('nextbtn').disabled = true;
