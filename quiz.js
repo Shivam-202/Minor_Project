@@ -297,7 +297,7 @@ function subfunction() {
 
     });
 
-    document.getElementById('attempt').innerHTML = `${ansgiven + wrong}`;
+    document.getElementById('attempt').innerHTML = `${ansgiven}`;
     document.getElementById('correct').innerHTML = `${correct}`;
     document.getElementById('leave').innerHTML = `${leave + (10 - i)}`;
     document.getElementById('wrong').innerHTML = `${wrong}`;
