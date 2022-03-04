@@ -264,6 +264,8 @@ function ansfunction() {
         document.getElementById('opt2').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
         document.getElementById('opt3').style.backgroundColor = "rgba(131, 236, 255, 0.555)";
     }
+ document.getElementById('ansgive').innerHTML = `${(ansgiven)} / 10`;
+
 }
 
 
@@ -326,7 +328,7 @@ function subfunction() {
 }
 
 function scoreing() {
-    ansfunction();
+//     ansfunction();
 
     fetch("content/api").then(function (response) {
         return response.json();
@@ -344,7 +346,7 @@ function scoreing() {
             wrong++;
             ans1 = "";
         }
-        document.getElementById('ansgive').innerHTML = `${(ansgiven + wrong)} / 10`;
+//         document.getElementById('ansgive').innerHTML = `${(ansgiven)} / 10`;
 
     });
 
